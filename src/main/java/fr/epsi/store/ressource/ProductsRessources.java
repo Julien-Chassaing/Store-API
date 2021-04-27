@@ -24,15 +24,6 @@ public class ProductsRessources {
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
     //http://localhost:8082/store-1.0-SNAPSHOT/api/products/add
-    // Body -> Raw -> Json
-    //{
-    //    "detail": "test",
-    //    "image": "test.png",
-    //    "info": "test",
-    //    "name": "test",
-    //    "price": 100,
-    //    "quantity": 20
-    //}
     public Product addProduct(Product p){
         return productDB.addProduct(p);
     }

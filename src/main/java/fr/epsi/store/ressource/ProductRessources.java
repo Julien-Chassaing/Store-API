@@ -13,13 +13,6 @@ public class ProductRessources {
 
     @GET
     @Produces("text/json")
-    //http://localhost:8082/store-1.0-SNAPSHOT/api/product
-    public List<Product> get() {
-        return productDB.getAllProducts();
-    }
-
-    @GET
-    @Produces("text/json")
     @Path("{id}")
     //http://localhost:8082/store-1.0-SNAPSHOT/api/product/2
     public Product getById(@PathParam("id") int id) {
